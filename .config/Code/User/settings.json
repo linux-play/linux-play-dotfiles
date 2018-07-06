@@ -1,0 +1,13 @@
+{
+  "editor.detectIndentation": false,
+  "editor.renderWhitespace": "all",
+  "editor.rulers": [120],
+  "editor.tabSize": 2,
+  "editor.wordWrapColumn": 120,
+  "extensions.ignoreRecommendations": true,
+  "extensions.showRecommendationsOnlyOnDemand": true,
+  "files.trimTrailingWhitespace": true,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "update.channel": "none",
+}
