@@ -1,0 +1,9 @@
+rofi.bw:              8
+rofi.color-normal:    #2f343f,#d3dae3,#2f343f,#5294e2,#ffffff
+rofi.color-window:    #2f343f,#2f343f
+rofi.font:            Droid Sans 11
+rofi.hide-scrollbar:  True
+rofi.lines:           8
+rofi.padding:         0
+rofi.separator-style: none
+rofi.width:           600

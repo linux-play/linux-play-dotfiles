@@ -1,0 +1,17 @@
+general {
+  separator = ""
+}
+
+order += "volume pulse"
+order += "tztime local"
+
+tztime local {
+  format      = "%time"
+  format_time = "%H:%M"
+}
+
+volume pulse {
+  device       = "pulse"
+  format       = "%volume"
+  format_muted = "%volume"
+}
