@@ -1,20 +1,16 @@
 exec --no-startup-id compton -D 5
 exec --no-startup-id feh --bg-center ~/.config/wallpaper --no-fehbg
-exec --no-startup-id mpd
 exec --no-startup-id pcmanfm -d
 exec --no-startup-id urxvtd -f
 
 set $cmd_audio_lower exec --no-startup-id pamixer -d 1
 set $cmd_audio_mute  exec --no-startup-id pamixer -t
-set $cmd_audio_next  exec --no-startup-id mpc next
-set $cmd_audio_play  exec --no-startup-id mpc toggle
-set $cmd_audio_prev  exec --no-startup-id mpc prev
 set $cmd_audio_raise exec --no-startup-id pamixer -i 1
 set $cmd_browser     exec --no-startup-id chromium
 set $cmd_filemanager exec --no-startup-id pcmanfm
 set $cmd_launcher    exec --no-startup-id rofi -show run
 set $cmd_screenlock  exec --no-startup-id i3lock -i ~/.config/wallpaper -u
-set $cmd_screenshot  exec --no-startup-id maim ~/pictures/screenshots/$(date +%Y%m%d%H%M%S).png
+set $cmd_screenshot  exec --no-startup-id maim ~/media/pictures/screenshots/$(date +%Y%m%d%H%M%S).png
 set $cmd_terminal    exec --no-startup-id urxvtc
 
 set $mod Mod4
@@ -73,9 +69,6 @@ bindsym $mod+Print           $cmd_screenshot
 bindsym $mod+Return          $cmd_terminal
 bindsym XF86AudioLowerVolume $cmd_audio_lower
 bindsym XF86AudioMute        $cmd_audio_mute
-bindsym XF86AudioNext        $cmd_audio_next
-bindsym XF86AudioPlay        $cmd_audio_play
-bindsym XF86AudioPrev        $cmd_audio_prev
 bindsym XF86AudioRaiseVolume $cmd_audio_raise
 
 font       pango:Droid Sans 11
